@@ -1,0 +1,171 @@
+@font-face {
+    font-family: '29LTAzer';
+    src: url('../fonts/29LTAzer.ttf') format('truetype');
+}
+
+/* base */
+body {
+    /*font-family: 'IBM Plex Sans Arabic', sans-serif;*/
+    font-family: '29LTAzer', sans-serif;
+
+}
+*:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+/* logo sizes */
+.logo {
+    width: 60px;
+}
+
+.logo-lg {
+    width: 140px;
+}
+
+.logo-md {
+    width: 100px;
+
+}
+
+
+.logo-xl {
+    width: 160px;
+
+}
+
+
+/* filters */
+.filter-green {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(24%) saturate(5523%) hue-rotate(77deg) brightness(102%) contrast(88%);
+}
+
+.filter-blue {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(59%) saturate(3428%) hue-rotate(237deg) brightness(79%) contrast(134%);
+}
+
+.filter-pink {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(61%) saturate(2476%) hue-rotate(203deg) brightness(100%) contrast(88%);
+}
+
+/* */
+.effect-scale {
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s, -webkit-transform 0.2s ease-out;
+}
+
+.effect-scale:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* hero */
+.hero {
+    background: #1ddfae;
+    color: white;
+}
+
+/* navbar */
+.navbar-dark
+{
+    background: #253238 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #1ddfae;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+
+/* key features */
+.key-features {
+    background: #2940ab;
+    color: white;
+}
+
+.key-features h1 {
+    color: #1cd760;
+}
+
+/* more features */
+.more-features {
+    background: #B02898;
+    color: #EFBAE6;
+}
+
+.more-features svg {
+    color: #EFBAE6;
+}
+
+/* featured */
+.featured {
+    background: #FFAAA8;
+    color: #030066;
+}
+
+.featured svg {
+    color: #030066;
+}
+
+/* popular */
+.popular {
+    background: #ffbc7e;
+    color: #ff2e01;
+}
+
+
+.popular .card-footer b {
+    color: #030066 !important;
+}
+
+/* footer */
+.footer {
+    background: #253238;
+    color: #fff;
+}
+
+.footer a {
+    color: #2edbc3;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer .social-media svg {
+    width: 20px;
+    height: 20px;
+    fill: #2edbc3;
+}
+
+.footer .social-media svg:hover {
+    fill: #fff;
+}
+
+
+/* inherit btn primary */
+.btn-primary {
+    color: #2940ab;
+    background-color: #1cd760;
+    border-color: #1cd760;
+}
+
+.btn-primary:hover {
+    color: #2940ab;
+    background-color: #1cd760;
+    border-color: #1cd760;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #2940ab;
+    background-color: #1cd760;
+    border-color: #1cd760;
+    box-shadow: 0 0 0 0.25rem rgb(28 215 96 / 50%) !important;
+}
